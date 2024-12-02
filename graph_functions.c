@@ -156,7 +156,7 @@ void bfs(Graph *graph, int startVertex)
     queue[back++] = startVertex;
     visited[startVertex] = true;
 
-    printf("BFS traversal starting from vertex %d:\n", startVertex);
+    printf("Final BFS Order %d:\n", startVertex);
     while (front < back)
     {
         // Dequeue the current vertex
@@ -187,7 +187,6 @@ void bfs(Graph *graph, int startVertex)
 void dfs(Graph *graph, int startVertex)
 {
     bool visited[MAX_VERTICES] = {false};
-    printf("DFS traversal starting from vertex %d:\n", startVertex);
     dfsRecursion(graph, startVertex, visited);
     printf("\n");
 }
